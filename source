@@ -167,7 +167,7 @@ local function deathcounterfunc()
         if lplr.Character and lplr.Character:FindFirstChild("Humanoid") then
             local humanoid = lplr.Character.Humanoid
             humanoid.HealthChanged:Connect(function(health)
-                if health = 0 then
+                if health == 0 then
                     deathscounter = deathscounter + 1
                 end
             end)
